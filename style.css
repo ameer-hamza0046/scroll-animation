@@ -18,6 +18,7 @@ body {
 
 h1 {
   margin: 10px;
+  text-align: center;
 }
 
 .box {
@@ -30,17 +31,18 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 20px 0px;
-  transform: translateX(-400%);
-  transition: transform 0.5s ease-out 0s;
+  position: relative;
+  left: -100vw;
+  transition: left 0.5s ease-out 0s;
   background-color: #2b2a4c;
   color: white;
   box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .box:nth-of-type(even) {
-  transform: translateX(400%);
+  left: 100vw;
 }
 
 .box.show {
-  transform: translateX(0);
+  left: 0;
 }
